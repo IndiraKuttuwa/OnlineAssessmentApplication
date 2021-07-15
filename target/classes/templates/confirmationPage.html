@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:tiles="http://www.thymeleaf.org">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>Registration Confirmation</title>
+</head>
+<body style="background-color: #FFA500; font-size: 160%;">
+Registered Successfully!!!
+<p th:text="${firstname} + ' ' + ${lastname}"/>
+
+
+<a th:href="@{/index}">LOGIN</a>
+</body>
+</html>

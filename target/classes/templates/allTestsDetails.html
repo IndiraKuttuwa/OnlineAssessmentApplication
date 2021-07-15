@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:tiles="http://www.thymeleaf.org">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>All Tests Details</title>
+</head>
+<body style="background-color: #00FFFF;">
+	<header>List of Candidates and Tests</header>
+	<table border="1">
+		<tr>
+			<th>Test date</th>
+			<th>Assessment</th>
+			<th>Test Marks</th>
+			<th>Email ID</th>
+			<th>Total Marks</th>
+		</tr>
+
+		
+
+			<tr th:each="detail:${allDetails}">
+				<td th:text="${detail.formattedDate}"></td>
+				<td th:text="${detail.assessment}"></td>
+				<td th:text="${detail.testMarks}"></td>
+				<td th:text="${detail.email}"></td>
+				<td th:text="${detail.totalMarks}"></td>
+				<td th:text="${detail.result}"></td>
+			</tr>
+	
+	</table>
+</body>
+</html>
